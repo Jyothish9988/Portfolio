@@ -111,14 +111,152 @@ Author URL: http://w3layouts.com
 </section>
 <!-- //about page about section -->
 
-
+<style>
+  .w3l-projects .card {
+      border: 2px solid #bfb8bf; /* Initial border color */
+      transition: border-color 0.3s ease-in-out;
+      overflow: hidden;
+    }
+  
+    .w3l-projects .card:hover {
+      border-color: #e62edc; /* Hover border color */
+    }
+  
+    .card-link {
+      display: block;
+      height: 100%;
+    }
+  
+    .card-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .card-animation {
+      transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+  
+    .card-link:hover .card-animation {
+      transform: scale(1.05);
+      border-color: #e62edc; /* Hover border color */
+    }
+  
+    .card-link {
+        display: block;
+        height: 100%;
+    }
+  
+    .card-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+    .card-animation {
+        transition: transform 0.3s ease-in-out;
+    }
+  
+    .card-link:hover .card-animation {
+        transform: scale(1.05);
+    }
+  </style>
+  
+  <!-- Projects Section in Card Format -->
+  <div class="py-5 w3l-projects">
+    <div class="container py-lg-5 py-3">
+        <h5 class="title-small mb-2"> My Projects</h5>
+        <h3 class="title-big mb-4">Discover My Innovative Web Development Endeavors</h3>
+  
+  
+        <div class="row">
+            <!-- Project Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="#project1-details" class="card-link">
+                    <div class="card card-animation">
+                        <div class="card-body">
+                            <h5 class="card-title">KSRTC PENSION FORUM</h5>
+                            <p class="card-text">Developed online KSRTC pension payment portal using PHP smarty.<br></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  
+            <!-- Project Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="#project2-details" class="card-link">
+                    <div class="card card-animation">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Edu</h5>
+                            <p class="card-text">Implemented Online Education for UG using PHP Smarty.<br></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  
+            <!-- Project Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="#project3-details" class="card-link">
+                    <div class="card card-animation">
+                        <div class="card-body">
+                            <h5 class="card-title">Eshopify</h5>
+                            <p class="card-text">Developed Ecommercial web application using Laravel. <br></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  
+            <!-- Project Card 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="#project4-details" class="card-link">
+                    <div class="card card-animation">
+                        <div class="card-body">
+                            <h5 class="card-title">SMH</h5>
+                            <p class="card-text">Automated Smart Mental Health Helpline using Laravel.<br></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  
+            <!-- Project Card 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="#project5-details" class="card-link">
+                    <div class="card card-animation">
+                        <div class="card-body">
+                            <h5 class="card-title">Noosi_TeleConnect</h5>
+                            <p class="card-text">An innovative solution for remote patient care and communication. </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <a href="#project5-details" class="card-link">
+                  <div class="card card-animation">
+                      <div class="card-body">
+                          <h5 class="card-title">Code Fusion</h5>
+                          <p class="card-text">An Online Code teaching platform using laravel. <br> </p>
+                      </div>
+                  </div>
+              </a>
+          </div>
+  
+            <!-- Add more project cards as needed -->
+  
+        </div>
+    </div>
+  </div>
+  <!-- // Projects Section in Card Format -->
+  
 
 <!-- home page services section -->
 <section class="w3l-services">
   <div class="blog py-5" id="services">
       <div class="container py-lg-5">
-          <h5 class="title-small text-center">Services</h5>
-          <h3 class="title-big text-center mb-sm-5 mb-4">Certifications</h3>
+          <!-- <h5 class="title-small text-center">Services</h5> -->
+          <h3 class="title-big text-center mb-sm-5 mb-4">My Certifications</h3>
           <div class="row">
               <div class="col-md-12 mx-auto pr-2">
                   <div class="owl-two owl-carousel owl-theme">
